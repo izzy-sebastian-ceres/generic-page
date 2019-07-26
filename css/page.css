@@ -175,9 +175,34 @@ img{
     max-width: 100%;
     max-height: 100%;
 }
-@media screen and( min-width: 500px){
+@media only screen and (max-width: 600px) {
+
     body{
-        background: red;
+        display:grid;
+        grid-template-areas:
+                "nav"
+                "body1"
+                "ad1"
+                "body2"
+                "ad2"
+                "body3"
+                "ad3"
+                "number"
+                "footer1"
+                "footer2";
+        grid-template-rows: 3em repeat(6, 300px) 3em 8em 2em;
+        grid-template-columns: 100% ;
+        margin: 0;
+    }
+    .ad1{
+        margin-left: 1em;
+    }
+    .ad2{
+        margin-left: 1em;
+    }
+    .ad3{
+        margin-left: 1em;
     }
 
 }
+
