@@ -7,5 +7,51 @@ body{
     "link body ad"
     "link footer footer";
     grid-template-rows: 3em repeat(3, 300px) 10em;
-    grid-template-columns: 20% 600px 20%;
+    grid-template-columns: 20% 60% 20% ;
+    margin: 0;
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+
+
+}
+.nav-ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+}
+nav a{
+    display: inline-block;
+    padding: 0 .5em;
+    color: white;
+    text-decoration:none;
+}
+.logo{
+    background-color: red;
+    padding: 0 .2em;
+
+}
+
+.link{
+    grid-area: link;
+}
+.body{
+    grid-area: body;
+}
+.ad{
+    grid-area: ad;
+
+}
+.footer{
+    grid-area: footer;
+
 }
