@@ -6,8 +6,9 @@ body{
     "link body2 ad2"
     "link body3 ad3"
     "link number ."
-    "link footer footer";
-    grid-template-rows: 3em repeat(3, 300px) 3em 10em;
+    "link footer1 footer1"
+    "link footer2 footer2";
+    grid-template-rows: 3em repeat(3, 300px) 3em 8em 2em;
     grid-template-columns: 20% 60% 20% ;
     margin: 0;
 }
@@ -50,7 +51,7 @@ nav a{
     list-style-type: none;
     background-color: lightgrey;
     margin-top: 0;
-
+    height: 100%;
 }
 .link>li{
     padding: 1em;
@@ -67,13 +68,15 @@ nav a{
 
 .body1{
     grid-area: body1;
+    padding: 2em;
 }
 .body2{
     grid-area: body2;
+    padding: 2em;
 }
 .body3{
     grid-area: body3;
-
+    padding: 2em;
 }
 .ad1{
     grid-area: ad1;
@@ -99,19 +102,37 @@ nav a{
     width: 90%;
     height: 30%;
     border: 1px solid black;
-    margin: 1em;
+    margin: .2em;
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    vertical-align: middle;
+    line-height: 6em;
 }
 .ADV2{
     width: 90%;
     height: 40%;
     border: 1px solid black;
-    margin: 1em;
+    margin: .2em;
+    line-height: 8em;
+    text-align: center;
 }
-.footer{
-    grid-area: footer;
+.footer1{
+    grid-area: footer1;
+    background-color: gray;
+    color: white;
+    padding-left: 1em;
+    line-height: 8;
+}
+.footer2{
+    grid-area: footer2;
+    background-color: #222;
+    color: white;
+    padding-left: 1em;
+    line-height: 2;
+}
+.footer2 a{
+    color: white;
 
 }
 .number{
@@ -133,4 +154,8 @@ nav a{
 .number a:hover{
     background-color: black;
     color: white;
+}
+
+.next-margin{
+    margin-right: 6em;
 }
