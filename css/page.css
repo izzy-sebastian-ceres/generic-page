@@ -52,7 +52,9 @@ nav a{
     background-color: lightgrey;
     margin-top: 0;
     height: 100%;
+    padding-left: 0;
 }
+
 .link>li{
     padding: 1em;
 }
