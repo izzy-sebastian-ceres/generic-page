@@ -5,8 +5,9 @@ body{
     "link body ad"
     "link body ad"
     "link body ad"
+    "link number ad"
     "link footer footer";
-    grid-template-rows: 3em repeat(3, 300px) 10em;
+    grid-template-rows: 3em repeat(3, 300px) 3em 10em;
     grid-template-columns: 20% 60% 20% ;
     margin: 0;
 }
@@ -14,7 +15,7 @@ body{
     grid-area: nav;
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    background-color: #222;
 
 
 }
@@ -31,13 +32,16 @@ body{
 }
 nav a{
     display: inline-block;
-    padding: 0 .5em;
+    padding: 100% 1em ;
     color: white;
     text-decoration:none;
+
 }
+
+
 .logo{
-    background-color: red;
-    padding: 0 .2em;
+    background-color: #444;
+    padding: 14px;
 
 }
 
@@ -54,4 +58,24 @@ nav a{
 .footer{
     grid-area: footer;
 
+}
+.number{
+    grid-area: number;
+    display: flex;
+
+}
+.number>ul{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+.number a{
+    text-decoration: none;
+    padding: 1em;
+    color: #000;
+
+}
+.number a:hover{
+    background-color: black;
+    color: white;
 }
