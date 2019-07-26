@@ -2,10 +2,10 @@ body{
     display:grid;
     grid-template-areas:
     "nav nav nav"
-    "link body ad"
-    "link body ad"
-    "link body ad"
-    "link number ad"
+    "link body1 ad1"
+    "link body2 ad2"
+    "link body3 ad3"
+    "link number ."
     "link footer footer";
     grid-template-rows: 3em repeat(3, 300px) 3em 10em;
     grid-template-columns: 20% 60% 20% ;
@@ -47,13 +47,68 @@ nav a{
 
 .link{
     grid-area: link;
-}
-.body{
-    grid-area: body;
-}
-.ad{
-    grid-area: ad;
+    list-style-type: none;
+    background-color: lightgrey;
+    margin-top: 0;
 
+}
+.link>li{
+    padding: 1em;
+}
+.link a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+
+.body1{
+    grid-area: body1;
+}
+.body2{
+    grid-area: body2;
+}
+.body3{
+    grid-area: body3;
+
+}
+.ad1{
+    grid-area: ad1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.ad2{
+    grid-area: ad2;
+    display: flex;
+    flex-direction: column;
+
+}
+.ad3{
+    grid-area: ad3;
+    display: flex;
+    flex-direction: column;
+
+}
+.ADV{
+    width: 90%;
+    height: 30%;
+    border: 1px solid black;
+    margin: 1em;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.ADV2{
+    width: 90%;
+    height: 40%;
+    border: 1px solid black;
+    margin: 1em;
 }
 .footer{
     grid-area: footer;
