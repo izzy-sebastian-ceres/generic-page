@@ -1,0 +1,11 @@
+body{
+    display:grid;
+    grid-template-areas:
+    "nav nav nav"
+    "link body ad"
+    "link body ad"
+    "link body ad"
+    "link footer footer";
+    grid-template-rows: 3em repeat(3, 300px) 10em;
+    grid-template-columns: 20% 600px 20%;
+}
